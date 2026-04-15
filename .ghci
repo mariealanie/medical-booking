@@ -1,0 +1,44 @@
+-- .ghci
+-- Конфигурационный файл для GHCi
+-- Обеспечивает чистый вывод и полезные настройки по умолчанию
+
+-- Включаем все предупреждения
+:set -Wall
+
+-- Отключаем предупреждения о неиспользуемых do-блоках
+:set -fno-warn-unused-do-bind
+
+-- Отключаем предупреждения о приведении типов по умолчанию
+:set -fno-warn-type-defaults
+
+-- Более красивый вывод значений
+:set -interactive-print=print
+
+-- Показываем типы при вычислении выражений
+:set +t
+
+-- Показываем время выполнения выражений
+:set +s
+
+-- Цветной вывод
+:set -fdiagnostics-color=always
+
+-- Приветственное сообщение
+System.IO.putStrLn "========================================"
+System.IO.putStrLn "  Medical Expert System - GHCi Session"
+System.IO.putStrLn "========================================"
+System.IO.putStrLn ""
+System.IO.putStrLn "Useful commands:"
+System.IO.putStrLn "  :main [doctors.yaml] [symptoms.yaml] - run program"
+System.IO.putStrLn "  :r                                   - reload modules"
+System.IO.putStrLn "  :t expression                        - show type"
+System.IO.putStrLn "  :i Type                              - show info about type"
+System.IO.putStrLn "  :browse Module                       - browse module exports"
+System.IO.putStrLn ""
+System.IO.putStrLn "Loaded modules:"
+System.IO.putStrLn "  • Types    - data types"
+System.IO.putStrLn "  • Config   - configuration loading"
+System.IO.putStrLn "  • Logic    - business logic"
+System.IO.putStrLn "  • UI       - rendering"
+System.IO.putStrLn "  • Utils    - helper functions"
+System.IO.putStrLn "========================================\n"

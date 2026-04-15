@@ -1,0 +1,60 @@
+name: mariabooking
+version: 0.1.0.0
+synopsis: Medical Expert System
+description: |
+  Medical expert system for doctor recommendation based on symptoms.
+  Features hierarchical symptom selection, multiple diagnostic rules,
+  and graphical interface using Gloss.
+category: Medical
+author: Maria
+maintainer: maria@example.com
+license: MIT
+
+dependencies:
+  - base >= 4.16 && < 5
+  - gloss
+  - text
+  - containers
+  - yaml
+  - aeson
+  - bytestring
+  - directory
+  - filepath
+  - mtl
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - Types
+    - Config
+    - Logic
+    - UI
+    - Utils
+
+executables:
+  mariabooking:
+    main: Main.hs
+    source-dirs: app
+    dependencies:
+      - mariabooking
+    ghc-options:
+      - -Wall
+      - -Werror
+
+tests:
+  mariabooking-test:
+    main: Spec.hs
+    source-dirs: test
+    dependencies:
+      - mariabooking
+      - hspec
+      - temporary
+      - directory
+    ghc-options:
+      - -Wall
+      - -Werror
+
+default-extensions:
+  - OverloadedStrings
+  - DeriveGeneric
+  - GeneralizedNewtypeDeriving

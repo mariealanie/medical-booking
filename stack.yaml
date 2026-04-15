@@ -1,0 +1,13 @@
+resolver: lts-22.0
+
+packages:
+- .
+
+extra-deps: []
+
+flags: {}
+
+extra-package-dbs: []
+
+ghc-options:
+  "$locals": -Wall -Werror

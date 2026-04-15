@@ -1,0 +1,23 @@
+# Cabal
+dist/
+dist-newstyle/
+cabal.project.local
+cabal.sandbox.config
+
+# Stack
+.stack-work/
+
+# GHC
+*.hi
+*.o
+*.dyn_o
+*.dyn_hi
+
+# macOS
+.DS_Store
+
+# Editor
+*.swp
+*~
+.DS_Store
+*.log

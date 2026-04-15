@@ -1,0 +1,47 @@
+- doctorName: Therapist
+  doctorProfile: General diagnosis
+  keySymptoms: [fever, weakness]
+  symptomWeights: {headache: 5, fever: 8, weakness: 6, dizziness: 4, nausea: 4}
+  isEmergency: false
+
+- doctorName: Traumatologist
+  doctorProfile: Trauma and fractures
+  keySymptoms: [fracture, dislocation, severe_trauma]
+  symptomWeights: {fracture: 10, dislocation: 9, bruise: 6, swelling: 5}
+  isEmergency: true
+
+- doctorName: Dentist
+  doctorProfile: Dental problems
+  keySymptoms: [toothache, gum_bleeding]
+  symptomWeights: {toothache: 10, gum_bleeding: 8, oral_redness: 6}
+  isEmergency: false
+
+- doctorName: Cardiologist
+  doctorProfile: Heart diseases
+  keySymptoms: [chest_pain]
+  symptomWeights: {chest_pain: 10, weakness: 5}
+  isEmergency: true
+
+- doctorName: Neurologist
+  doctorProfile: Nervous system
+  keySymptoms: [severe_headache, numbness]
+  symptomWeights: {headache: 6, dizziness: 7, numbness: 8, migraine: 9, severe_headache: 10}
+  isEmergency: false
+
+- doctorName: Ophthalmologist
+  doctorProfile: Eye diseases
+  keySymptoms: [eye_pain, vision_loss]
+  symptomWeights: {eye_pain: 9, vision_loss: 10, blurred_vision: 8, eye_redness: 7}
+  isEmergency: false
+
+- doctorName: Dermatologist
+  doctorProfile: Skin problems
+  keySymptoms: [rash, itching]
+  symptomWeights: {rash: 9, itching: 8, skin_redness: 7}
+  isEmergency: false
+
+- doctorName: Gastroenterologist
+  doctorProfile: Digestive system
+  keySymptoms: [abdominal_pain, nausea]
+  symptomWeights: {abdominal_pain: 9, nausea: 8, vomiting: 8, weakness: 4}
+  isEmergency: false

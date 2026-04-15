@@ -1,0 +1,68 @@
+cabal-version: 2.2
+name:          mariabooking
+version:       0.1.0.0
+synopsis:      Medical Expert System
+description:   Medical expert system for doctor recommendation based on symptoms.
+category:      Medical
+author:        Maria
+maintainer:    maria@example.com
+license:       MIT
+build-type:    Simple
+
+library
+  exposed-modules:
+      Types
+    , Config
+    , Logic
+    , UI
+    , Utils
+  hs-source-dirs: src
+  default-extensions:
+      OverloadedStrings
+      DeriveGeneric
+      GeneralizedNewtypeDeriving
+  ghc-options: -Wall -Werror
+  build-depends:
+      base >=4.16 && <5
+    , gloss
+    , text
+    , containers
+    , yaml
+    , aeson
+    , bytestring
+    , directory
+    , filepath
+    , mtl
+
+executable mariabooking
+  main-is: Main.hs
+  hs-source-dirs: app
+  default-extensions:
+      OverloadedStrings
+      DeriveGeneric
+      GeneralizedNewtypeDeriving
+  ghc-options: -Wall -Werror
+  build-depends:
+      base >=4.16 && <5
+    , mariabooking
+    , gloss
+    , text
+    , containers
+
+test-suite mariabooking-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  hs-source-dirs: test
+  default-extensions:
+      OverloadedStrings
+      DeriveGeneric
+      GeneralizedNewtypeDeriving
+  ghc-options: -Wall -Werror
+  build-depends:
+      base >=4.16 && <5
+    , mariabooking
+    , hspec
+    , temporary
+    , directory
+    , text
+    , containers

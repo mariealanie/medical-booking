@@ -1,0 +1,114 @@
+nodeId: root
+nodeName: Main Menu
+children:
+  - nodeId: pain
+    nodeName: Pain
+    children:
+      - nodeId: headache
+        nodeName: Headache
+        children: []
+      - nodeId: migraine
+        nodeName: Migraine
+        children: []
+      - nodeId: toothache
+        nodeName: Toothache
+        children: []
+      - nodeId: chest_pain
+        nodeName: Chest Pain
+        children: []
+      - nodeId: abdominal_pain
+        nodeName: Abdominal Pain
+        children: []
+      - nodeId: eye_pain
+        nodeName: Eye Pain
+        children: []
+      - nodeId: joint_pain
+        nodeName: Joint Pain
+        children: []
+      - nodeId: muscle_pain
+        nodeName: Muscle Pain
+        children: []
+      
+  - nodeId: condition
+    nodeName: General Condition
+    children:
+      - nodeId: fever
+        nodeName: Fever
+        children: []
+      - nodeId: weakness
+        nodeName: Weakness
+        children: []
+      - nodeId: dizziness
+        nodeName: Dizziness
+        children: []
+      - nodeId: nausea
+        nodeName: Nausea
+        children: []
+      - nodeId: vomiting
+        nodeName: Vomiting
+        children: []
+      
+  - nodeId: trauma
+    nodeName: Trauma & Injuries
+    children:
+      - nodeId: fracture
+        nodeName: Fracture
+        children: []
+      - nodeId: dislocation
+        nodeName: Dislocation
+        children: []
+      - nodeId: bruise
+        nodeName: Bruise
+        children: []
+      - nodeId: swelling
+        nodeName: Swelling
+        children: []
+      - nodeId: severe_trauma
+        nodeName: Severe Trauma
+        children: []
+      
+  - nodeId: skin
+    nodeName: Skin Problems
+    children:
+      - nodeId: rash
+        nodeName: Rash
+        children: []
+      - nodeId: itching
+        nodeName: Itching
+        children: []
+      - nodeId: skin_redness
+        nodeName: Skin Redness
+        children: []
+      
+  - nodeId: eye
+    nodeName: Eye Problems
+    children:
+      - nodeId: vision_loss
+        nodeName: Vision Loss
+        children: []
+      - nodeId: blurred_vision
+        nodeName: Blurred Vision
+        children: []
+      - nodeId: eye_redness
+        nodeName: Eye Redness
+        children: []
+      
+  - nodeId: dental
+    nodeName: Dental & Oral
+    children:
+      - nodeId: gum_bleeding
+        nodeName: Gum Bleeding
+        children: []
+      - nodeId: oral_redness
+        nodeName: Oral Redness
+        children: []
+      
+  - nodeId: neuro
+    nodeName: Neurological
+    children:
+      - nodeId: numbness
+        nodeName: Numbness
+        children: []
+      - nodeId: severe_headache
+        nodeName: Severe Headache
+        children: []
